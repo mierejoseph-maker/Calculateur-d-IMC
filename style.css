@@ -1,0 +1,175 @@
+:root {
+  /* Variables de couleur utilisées dans le site */
+  --vert: #10b981;
+  --rouge: #ef4444;
+  --bleu: #3b82f6;
+  --orange: #f59e0b;
+  --violet: #8b5cf6;
+  --texte: #1f2937;
+  --texte-clair: #6b7280;
+  --fond: #f9fafb;
+  --carte: #ffffff;
+  --rayon: 12px;
+  --espace: 1rem;
+}
+
+/* Réinitialisation de base pour un rendu propre */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background: var(--fond);
+  padding: var(--espace);
+}
+
+/* Style des blocs principaux : en-tête, carte et tableau */
+.entete {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  padding: 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 5%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.carte {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  padding: 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 5%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.tableau {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  padding: 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 5%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+p {
+  color: var(--texte-clair);
+}
+
+/* Styles des messages affichés par JavaScript */
+.resultat {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.maigreur {
+  background-color: var(--rouge);
+  color: var(--carte);
+}
+
+.normal {
+  background-color: var(--bleu);
+  color: var(--carte);
+}
+
+.surpoids {
+  background-color: var(--orange);
+  color: var(--carte);
+}
+
+.obesite {
+  background-color: var(--violet);
+  color: var(--carte);
+}
+
+/* Mise en forme du tableau de catégories IMC */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+table th,
+table td {
+  padding: 0.8rem 0.6rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+table thead {
+  background: #111827;
+  color: var(--carte);
+}
+
+table td:nth-child(1),
+table th:nth-child(1) {
+  background-color: var(--rouge);
+  color: var(--carte);
+}
+
+table td:nth-child(2),
+table th:nth-child(2) {
+  background-color: var(--bleu);
+  color: var(--carte);
+}
+
+table td:nth-child(3),
+table th:nth-child(3) {
+  background-color: var(--orange);
+  color: var(--carte);
+}
+
+table td:nth-child(4),
+table th:nth-child(4) {
+  background-color: var(--violet);
+  color: var(--carte);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--fond);
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  .entete,
+  .carte,
+  .tableau {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  table th,
+  table td {
+    padding: 0.7rem 0.4rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+}
