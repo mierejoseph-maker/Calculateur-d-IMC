@@ -1,6 +1,6 @@
 # Calculateur-d-IMC
 
-<img src="Capture d'écran 2026-07-25 023828.png" alt="calculateur d'IMC" width="600"/>
+<img src="Capture d'écran/Capture d'écran 2026-07-25 023828.png" alt="calculateur d'IMC" width="600"/>
 
 ## Description
 
